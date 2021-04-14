@@ -1,0 +1,31 @@
+@import './_variables';
+
+// .language-logo::after {
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 5px;
+//     background-color: $green;
+//     margin-top: 8px;
+//     transition: width .3s
+// }
+
+// .language-logo:hover::after {
+//     width:100%;
+//     transition: width .3s;
+// }
+.socialMediaIcon {
+    svg {
+        path {
+            transition: fill .3s
+        }
+    }
+}
+
+.socialMediaIcon:hover {
+    svg {
+        path {
+            fill: $white;
+        }
+    }
+}

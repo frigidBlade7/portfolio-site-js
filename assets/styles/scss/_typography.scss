@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
+@import './_breakpoints';
+
+@font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monaco'), url('@/assets/fonts/Monaco.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gordita'), url('@/assets/fonts/GorditaRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gordita';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Gordita'), url('@/assets/fonts/GorditaMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Graphik'), url('@/assets/fonts/GraphikSemibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Graphik'), url('@/assets/fonts/GraphikMedium.otf') format('opentype');
+}
+
+$sora-font: 'Sora', sans-serif;
+$monaco-font: 'Monaco';
+$gordita-font: 'Gordita';
+
+:root {
+    --text-multiplier: 1;
+    --heading-line-height:1;
+}
+
+@include for-tablet-portrait-only {
+    :root{
+        --text-multiplier: 0.81;
+        --heading-line-height: 0.875;
+    }
+
+}
+
+@include for-phone-only {
+    :root {
+        --text-multiplier: 0.54;
+        --heading-line-height: 0.656;
+    }
+
+}
+
+.ff-monaco {
+  font-family: $monaco-font;
+}
+
+.ff-sora {
+  font-family: $sora-font;
+}
+
+h1 {
+    font-family: $sora-font;
+    font-size: calc(5.5rem * var(--text-multiplier));
+    line-height: calc(6rem * var(--heading-line-height));
+}
+
+.text-body-regular {
+    font-family: $monaco-font;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.01em;
+}
+
+.text-body-bold {
+    font-family: $sora-font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.01em;
+}
+
+.text-subtext {
+    font-family: $gordita-font;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* or 143% */
+
+    letter-spacing: -0.01em;
+}
+
+.text-subtext-medium {
+    font-family: $gordita-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* identical to box height, or 143% */
+
+    letter-spacing: -0.01em;
+}
+
+.text-caption  {
+    font-family: $gordita-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.01em;
+}

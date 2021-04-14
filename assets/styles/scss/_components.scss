@@ -1,0 +1,29 @@
+@import './_variables';
+
+button {
+    &.btn-outline {
+        border: 2px solid $white;
+        padding: 18px 24px;
+        color:  $white;
+        background-color: $black_pearl;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $white;
+            color: $black_pearl;
+        }
+    }
+
+    &.btn-regular {
+        color: $white;
+        transition: color .3s;
+
+        &:hover {
+            color: $dark-gray;
+        }
+    }
+}
+
+hr {
+    border: 1px solid $stone;
+}
