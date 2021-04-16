@@ -2,39 +2,7 @@
   <main
     class="bg-black-pearl fixed top-0 left-0 right-0 bottom-0 w-full h-full"
   >
-    <div class="flex justify-between">
-      <nuxt-link to="/">
-        <img
-          src="@/assets/svg/maclean_logo.svg"
-          alt="Maclean Logo"
-          class="mt-10 ml-14"
-        />
-      </nuxt-link>
-
-      <div class="flex mt-10 mr-14">
-        <a
-          href="https://blog.josephmaclean.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            class="bg-black-pearl text-body-bold text-white px-6 py-4 btn-regular"
-          >
-            go to blog
-          </button>
-        </a>
-        <!-- <a
-          href="@/assets/pdf/joseph-maclean-arhin-resume.pdf"
-          download="Joseph_Maclean_Arhin_Resume.pdf"
-        > -->
-        <button
-          class="btn-outline bg-black-pearl border-white border-2 text-body-bold text-white px-6 py-2"
-        >
-          download my resume
-        </button>
-        <!-- </a> -->
-      </div>
-    </div>
+    <nav-bar />
 
     <div class="skills w-102 mx-auto mt-36">
       <skill-set-tabs>
@@ -156,86 +124,86 @@ export default {
 </script>
 
 <style lang="scss">
-$t-duration: 800ms;
-$t-delay: 300ms;
+// $t-duration: 800ms;
+// $t-delay: 300ms;
 
-.intro-enter-active,
-.intro-leave-active {
-  transition-duration: $t-duration * 2;
+// .intro-enter-active,
+// .intro-leave-active {
+//   transition-duration: $t-duration * 2;
 
-  &::before,
-  &::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: block;
-    width: 100%;
-    height: 50%;
-    transition-property: opacity, transform;
-    transition-timing-function: ease-in-out;
-  }
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//     display: block;
+//     width: 100%;
+//     height: 50%;
+//     transition-property: opacity, transform;
+//     transition-timing-function: ease-in-out;
+//   }
 
-  &::before {
-    background-color: #2e2e2e;
-  }
+//   &::before {
+//     background-color: #2e2e2e;
+//   }
 
-  &::after {
-    top: 50%;
-    background-color: #2e2e2e;
-  }
-}
+//   &::after {
+//     top: 50%;
+//     background-color: #2e2e2e;
+//   }
+// }
 
-.intro-leave {
-  &::before,
-  &::after {
-    transform: scaleX(0);
-  }
-}
+// .intro-leave {
+//   &::before,
+//   &::after {
+//     transform: scaleX(0);
+//   }
+// }
 
-.intro-leave-active {
-  &::before {
-    transition-duration: $t-duration;
-  }
+// .intro-leave-active {
+//   &::before {
+//     transition-duration: $t-duration;
+//   }
 
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
-}
+//   &::after {
+//     transition-duration: $t-duration - $t-delay;
+//     transition-delay: $t-delay;
+//   }
+// }
 
-.intro-leave-to {
-  &::before,
-  &::after {
-    transform: scale(1);
-    transform-origin: left;
-  }
-}
+// .intro-leave-to {
+//   &::before,
+//   &::after {
+//     transform: scale(1);
+//     transform-origin: left;
+//   }
+// }
 
-.intro-enter {
-  &::before,
-  &::after {
-    transform: scaleX(1);
-  }
-}
+// .intro-enter {
+//   &::before,
+//   &::after {
+//     transform: scaleX(1);
+//   }
+// }
 
-.intro-enter-active {
-  &::before {
-    transition-duration: $t-duration;
-  }
+// .intro-enter-active {
+//   &::before {
+//     transition-duration: $t-duration;
+//   }
 
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
-}
+//   &::after {
+//     transition-duration: $t-duration - $t-delay;
+//     transition-delay: $t-delay;
+//   }
+// }
 
-.intro-enter-to {
-  &::before,
-  &::after {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-}
+// .intro-enter-to {
+//   &::before,
+//   &::after {
+//     transform: scaleX(0);
+//     transform-origin: right;
+//   }
+// }
 </style>

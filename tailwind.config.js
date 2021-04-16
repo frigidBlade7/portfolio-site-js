@@ -16,16 +16,26 @@ module.exports = {
         stone: '#32323',
       },
       spacing: {
+        50: '12.125rem',
         72: '18rem',
+        80: '20rem',
         84: '21rem',
         96: '24rem',
+        101: '34rem',
         102: '36rem',
+        106: '40rem',
+        108: '42rem',
+        110: '46rem',
       },
       fontSize: {
+        '7.5xl': '5.5rem',
         '10xl': '9rem',
       },
       lineHeight: {
         36: '9rem',
+      },
+      screens: {
+        xsm: '375px',
       },
     },
   },
