@@ -5,7 +5,12 @@
         <li v-for="(tab, i) in tabs" :key="i" class="mr-10">
           <a href="#" @click="selectTab(tab)">
             <div class="img-box" :class="{ 'is-active': tab.isActive }">
-              <img :src="require(`@/assets/svg/${tab.src}`)" alt="" srcset="" />
+              <img
+                :src="require(`@/assets/svg/${tab.src}`)"
+                alt=""
+                srcset=""
+                class="w-7 lg:w-8"
+              />
             </div>
           </a>
         </li>

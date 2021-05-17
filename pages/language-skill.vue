@@ -1,13 +1,15 @@
 <template>
-  <main
-    class="bg-black-pearl fixed top-0 left-0 right-0 bottom-0 w-full h-full"
-  >
+  <main class="bg-black-pearl min-h-screen pb-12">
     <nav-bar />
 
-    <div class="skills w-102 mx-auto mt-36">
+    <div class="lg:w-102 md:w-102 lg:mx-auto md:mx-auto mx-8 mt-36">
       <skill-set-tabs>
         <skill-set-tab src="python_logo.svg" :selected="true">
-          <h1 class="text-10xl leading-36 text-white">python</h1>
+          <h1
+            class="lg:text-10xl md:lg:text-10xl lg:leading-36 text-white sm:text-6.5xl"
+          >
+            python
+          </h1>
           <p class="mt-10 ff-monaco text-white">
             Ah, what more can I say about
             <span class="text-yellow">python</span>. With
@@ -23,7 +25,9 @@
           </p>
         </skill-set-tab>
         <skill-set-tab src="typescript_logo.svg">
-          <h1 class="text-10xl leading-36 text-white">
+          <h1
+            class="lg:text-10xl md:lg:text-10xl lg:leading-36 text-white sm:text-6.5xl"
+          >
             type <br />
             Script
           </h1>
@@ -41,7 +45,11 @@
           </p>
         </skill-set-tab>
         <skill-set-tab src="swift_logo.svg">
-          <h1 class="text-10xl leading-36 text-white">swift⚡️</h1>
+          <h1
+            class="lg:text-10xl md:lg:text-10xl lg:leading-36 text-white sm:text-6.5xl"
+          >
+            swift⚡️
+          </h1>
           <span class="mt-10 ff-monaco text-white">
             With <span class="text-peach">Swift</span>, I have the speed of the
             Flash. The elegance of <span class="text-blue">swift</span> means

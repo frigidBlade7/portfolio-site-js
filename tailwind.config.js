@@ -16,6 +16,7 @@ module.exports = {
         stone: '#32323',
       },
       spacing: {
+        12.5: '6.25rem',
         50: '12.125rem',
         72: '18rem',
         80: '20rem',
@@ -28,6 +29,7 @@ module.exports = {
         110: '46rem',
       },
       fontSize: {
+        '6.5xl': '4rem',
         '7.5xl': '5.5rem',
         '10xl': '9rem',
       },
