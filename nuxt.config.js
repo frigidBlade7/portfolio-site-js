@@ -40,7 +40,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://josephmaclean.dev/icon.png',
+        content: 'https://www.josephmaclean.dev/icon.png',
       },
 
       // Open Graph
@@ -65,12 +65,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://josephmaclean.dev/icon.png',
+        content: 'https://www.josephmaclean.dev/icon.png',
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: 'https://josephmaclean.dev/icon.png',
+        content: 'https://www.josephmaclean.dev/icon.png',
       },
       {
         hid: 'og:image:alt',
