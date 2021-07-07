@@ -10,6 +10,15 @@
           >
             python
           </h1>
+          <div class="mt-4">
+            <img
+              v-for="(item, index) in python_stack_icons"
+              :key="index"
+              :src="require(`@/assets/svg/${item}`)"
+              alt="flask logo"
+              class="inline-block h-5 mr-3"
+            />
+          </div>
           <p class="mt-10 ff-monaco text-white">
             Ah, what more can I say about
             <span class="text-yellow">python</span>. With
@@ -17,8 +26,8 @@
             <span class="text-yellow">beautiful</span> language, I can scrape
             the <span class="text-blue">web</span>, build
             <span class="text-purple">powerful</span>
-            <span class="text-peach">APIs</span>, etc.
-            <span class="text-yellow">Python</span> me the
+            <span class="text-peach">APIs</span>, microservices, etc.
+            <span class="text-yellow">Python</span> grants me the
             <span class="text-purple">power</span> of superhuman
             <span class="text-peach">strength</span> to tackle the
             <span class="text-peach">unknown</span> and the complicated
@@ -31,6 +40,15 @@
             type <br />
             Script
           </h1>
+          <div class="mt-4">
+            <img
+              v-for="(item, index) in typescript_stack_icons"
+              :key="index"
+              :src="require(`@/assets/svg/${item}`)"
+              alt="flask logo"
+              class="inline-block h-5 mr-3"
+            />
+          </div>
           <p class="mt-10 ff-monaco text-white">
             Be it translating ui designs into
             <span class="text-yellow">front-end</span> applications using
@@ -50,13 +68,22 @@
           >
             swift⚡️
           </h1>
-          <span class="mt-10 ff-monaco text-white">
+          <div class="mt-4">
+            <img
+              v-for="(item, index) in swift_stack_icons"
+              :key="index"
+              :src="require(`@/assets/svg/${item}`)"
+              alt="flask logo"
+              class="inline-block h-5 mr-3"
+            />
+          </div>
+          <p class="mt-10 ff-monaco text-white">
             With <span class="text-peach">Swift</span>, I have the speed of the
             Flash. The elegance of <span class="text-blue">swift</span> means
             its my favorite language to develop iOS
             <span class="text-purple">applications</span> in (sorry
             <span class="text-blue">dart </span>).
-          </span>
+          </p>
           <h4 class="text-white ff-sora text-3xl mt-24">Projects</h4>
           <div class="relative">
             <div class="flex mt-8">
@@ -85,6 +112,33 @@
             />
           </div>
         </skill-set-tab>
+        <skill-set-tab src="scala_logo.svg">
+          <h1
+            class="lg:text-10xl md:lg:text-10xl lg:leading-36 text-white sm:text-6.5xl"
+          >
+            Scala
+          </h1>
+          <div class="mt-4">
+            <img
+              v-for="(item, index) in scala_stack_icons"
+              :key="index"
+              :src="require(`@/assets/svg/${item}`)"
+              alt="flask logo"
+              class="inline-block h-5 mr-3"
+            />
+          </div>
+          <p class="mt-10 ff-monaco text-white">
+            With tools such as
+            <span class="text-yellow"> Apache Spark</span>(which is developed in
+            <span class="text-peach">Scala </span> albeit with a
+            <span class="text-yellow">Python </span> binding),
+            <span class="text-yellow">Hadoop </span> and
+            <span class="text-blue">Apache Kafka</span>,
+            <span class="text-peach">scala </span> is an efficient Object
+            Oriented / functional progamming that is my go to language for big
+            data
+          </p>
+        </skill-set-tab>
       </skill-set-tabs>
       <social-media />
     </div>
@@ -98,6 +152,22 @@ export default {
   transition: 'intro',
   data() {
     return {
+      python_stack_icons: [
+        'flask_logo.svg',
+        'fastapi_logo.svg',
+        'django_logo.svg',
+      ],
+      typescript_stack_icons: [
+        'nodejs_logo.svg',
+        'vuejs_logo.svg',
+        'apollographql_logo.svg',
+      ],
+      swift_stack_icons: ['apple_logo.svg', 'ios_logo.svg'],
+      scala_stack_icons: [
+        'apachespark_logo.svg',
+        'apachekafka_logo.svg',
+        'apachehive_logo.svg',
+      ],
       swiftProjects: [
         {
           name: 'myCrd',
@@ -108,7 +178,18 @@ export default {
       ],
     }
   },
+  head: {
+    title: 'Skills',
+    meta: [
+      {
+        hid: 'skills',
+        name: 'Skill',
+        content: 'Maclean: Some of the skills I have are included on this page',
+      },
+    ],
+  },
   methods: {
+    // create a transition
     paragraphHovered() {
       const coverPhoto = this.$refs.projectCover
       gsap.to(coverPhoto, {
@@ -130,88 +211,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-// $t-duration: 800ms;
-// $t-delay: 300ms;
-
-// .intro-enter-active,
-// .intro-leave-active {
-//   transition-duration: $t-duration * 2;
-
-//   &::before,
-//   &::after {
-//     content: '';
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 2;
-//     display: block;
-//     width: 100%;
-//     height: 50%;
-//     transition-property: opacity, transform;
-//     transition-timing-function: ease-in-out;
-//   }
-
-//   &::before {
-//     background-color: #2e2e2e;
-//   }
-
-//   &::after {
-//     top: 50%;
-//     background-color: #2e2e2e;
-//   }
-// }
-
-// .intro-leave {
-//   &::before,
-//   &::after {
-//     transform: scaleX(0);
-//   }
-// }
-
-// .intro-leave-active {
-//   &::before {
-//     transition-duration: $t-duration;
-//   }
-
-//   &::after {
-//     transition-duration: $t-duration - $t-delay;
-//     transition-delay: $t-delay;
-//   }
-// }
-
-// .intro-leave-to {
-//   &::before,
-//   &::after {
-//     transform: scale(1);
-//     transform-origin: left;
-//   }
-// }
-
-// .intro-enter {
-//   &::before,
-//   &::after {
-//     transform: scaleX(1);
-//   }
-// }
-
-// .intro-enter-active {
-//   &::before {
-//     transition-duration: $t-duration;
-//   }
-
-//   &::after {
-//     transition-duration: $t-duration - $t-delay;
-//     transition-delay: $t-delay;
-//   }
-// }
-
-// .intro-enter-to {
-//   &::before,
-//   &::after {
-//     transform: scaleX(0);
-//     transform-origin: right;
-//   }
-// }
-</style>

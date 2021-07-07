@@ -6,12 +6,107 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'maclean',
+    htmlAttrs: {
+      lang: 'en',
+      amp: true,
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'msapplication-TileColor', content: '#da532c' },
+      { name: 'theme-color', content: '#000' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@josephmaclean' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://josephmaclean.dev',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Joseph Maclean Arhin - Software Engineer & Scrum Master',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Welcome to my personal website and blog.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://josephmaclean.dev/icon.png',
+      },
+
+      // Open Graph
+      // Test on: https://developers.facebook.com/tools/debug/
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://josephmaclean.dev',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Joseph Maclean Arhin - Software Engineer & Scrum Master',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Welcome to my personal website and blog.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://josephmaclean.dev/icon.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://josephmaclean.dev/icon.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'Joseph Maclean Arhin',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
+      },
+      {
+        rel: 'manifest',
+        href: '/site.webmanifest',
+      },
+      {
+        rel: 'mask-icon',
+        href: '/safari-pinned-tab.svg',
+        color: '#5bbad5',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

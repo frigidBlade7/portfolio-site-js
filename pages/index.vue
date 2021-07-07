@@ -21,9 +21,9 @@
           <div ref="icons" class="icons block">
             <nuxt-link to="/language-skill">
               <div
-                class="mt-10 w-50 md:w-72 lg:w-80 rounded-full bg-stone py-2 lg:py-5 px-6 lg:px-10 cursor-pointer"
+                class="mt-10 inline-block rounded-full bg-stone py-2 lg:py-5 px-6 lg:px-10 cursor-pointer"
               >
-                <ul class="w-28 md:w-44 lg:w-44 inline-block md:mr-4">
+                <ul class="inline-block md:mr-4">
                   <li class="language-logo inline-block mr-4 md:mr-7">
                     <img
                       src="@/assets/svg/python_logo.svg"
@@ -38,10 +38,17 @@
                       class="cursor-pointer w-5 md:w-8 md:h-8"
                     />
                   </li>
-                  <li class="language-logo inline-block">
+                  <li class="language-logo inline-block mr-4 md:mr-7">
                     <img
                       src="@/assets/svg/swift_logo.svg"
                       alt="swift logo"
+                      class="cursor-pointer w-5 md:w-8 md:h-8"
+                    />
+                  </li>
+                  <li class="language-logo inline-block">
+                    <img
+                      src="@/assets/svg/scala_logo.svg"
+                      alt="scala logo"
                       class="cursor-pointer w-5 md:w-8 md:h-8"
                     />
                   </li>
@@ -153,13 +160,5 @@ h1.typing {
       transition: width 0.3s;
     }
   }
-}
-
-@include for-phone-only {
-  // .icons {
-  //   img {
-  //     height: 20px;
-  //   }
-  // }
 }
 </style>

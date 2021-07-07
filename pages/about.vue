@@ -105,5 +105,16 @@
   </main>
 </template>
 <script>
-export default {}
+export default {
+  head: {
+    title: 'About me',
+    meta: [
+      {
+        hid: 'about',
+        name: 'about',
+        content: 'Maclean: a software engineer / crazy football fan and gamer',
+      },
+    ],
+  },
+}
 </script>
