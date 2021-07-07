@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="absolute top-0 bottom-0 flex justify-between lg:justify-center flex-col right-5 ml-12"
+    class="absolute top-4 lg:top-0 md:top-0 bottom-0 flex justify-between lg:justify-center flex-col right-5 ml-12"
   >
     <div
       class="w-24 lg:w-10 social-media h-30 flex lg:flex-col justify-between"
@@ -86,23 +86,6 @@ export default {
     const twitterIconRef = this.$refs.twitterIconRef
 
     const iconRefs = [linkedinIconRef, githubIconRef, twitterIconRef]
-
-    // TweenMax.fromTo(
-    //   iconRefs,
-    //   0.7,
-    //   {
-    //     delay: 100,
-    //     x: 200,
-    //     autoAlpha: 0,
-    //     ease: Power2.easeOut,
-    //   },
-    //   {
-    //     autoAlpha: 1,
-    //     stagger: 0.1,
-    //     x: -50,
-    //     ease: Power2.easeOut,
-    //   }
-    // )
     TweenMax.from(iconRefs, 0.7, {
       stagger: 0.1,
       x: 100,

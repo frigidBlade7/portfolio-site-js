@@ -1,6 +1,6 @@
 <template>
   <main
-    class="bg-black-pearl relative md:fixed lg:relative xl:fixed top-0 left-0 right-0 bottom-0 w-full h-full"
+    class="bg-black-pearl relative md:fixed lg:relative xl:fixed top-0 left-0 right-0 bottom-0 w-full h-full pb-12"
   >
     <nav-bar />
     <section class="md:w-106 mx-auto w-80 mt-12 lg:mt-0">
@@ -14,7 +14,7 @@
         skills in frontend technologies such as Vue and React with preference in
         accordance with how I named them ;), Backend technologies such as
         FastAPI, flask, rails, laravel, and nodejs albeit with a focus on python
-        frameworks and mobile applications in dart and swift again with
+        frameworks, and mobile applications in dart and swift again with
         preference for the latter
         <br />
         I'm also adept in bringing projects to life. With relevant experience
@@ -30,7 +30,7 @@
       <img class="mt-10" src="@/assets/svg/maclean.svg" alt="signing" />
 
       <div
-        class="mt-10 mb-24 md:mb-0 lg:mb-24 xl:mb-0 social-media w-32 flex justify-between"
+        class="mt-10 md:mb-0 lg:mb-24 xl:mb-0 social-media w-32 flex justify-between"
       >
         <div ref="linkedinIconRef" class="socialMediaIcon">
           <a

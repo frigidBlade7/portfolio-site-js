@@ -1,12 +1,14 @@
 <template>
-  <main class="bg-black-pearl">
+  <main
+    class="bg-black-pearl fixed table h-full w-full top-0 left-0 right-0 bottom-0"
+  >
     <div class="table-cell align-middle">
       <div class="flex justify-center">
         <div class="w-80 lg:w-110 md:w-102">
           <img
             src="@/assets/svg/maclean_logo.svg"
             alt="Maclean Logo"
-            class="h-5 mb-8 absolute md:relative top-6 left-8 md:left-0"
+            class="h-5 mb-8 absolute md:relative top-10 md:top-6 lg:top-6 left-8 md:left-0"
           />
           <vue-typed-js
             :strings="[
@@ -111,18 +113,6 @@ export default {
 </script>
 
 <style lang="scss">
-main {
-  @apply fixed;
-  @apply top-0;
-  @apply left-0;
-  @apply bottom-0;
-  @apply right-0;
-  @apply w-full;
-  @apply h-full;
-
-  display: table;
-}
-
 .content {
   width: 46.0625rem;
 }

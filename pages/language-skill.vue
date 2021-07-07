@@ -10,7 +10,7 @@
           >
             python
           </h1>
-          <div class="mt-4">
+          <div class="mt-6">
             <img
               v-for="(item, index) in python_stack_icons"
               :key="index"
@@ -105,7 +105,7 @@
             </p>
             <img
               ref="projectCover"
-              class="absolute -bottom-1 invisible left-3/4"
+              class="absolute -bottom-1 invisible sm:left-3 md:left-1/2 lg:left-3/4"
               src="@/assets/png/myCrd-cover.png"
               alt=""
               srcset=""
